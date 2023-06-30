@@ -1,0 +1,45 @@
+jiyun@jiyun-VirtualBox:~$ ./oslab_call_stack
+Push : 1
+Push : 1
+Push : 2
+Push : 3
+Pop : 3
+Pop : 2
+Pop : 1
+Pop : -1
+
+[  124.291590] [System Call] os2023_push :
+[  124.291591] Stack Top ---------------
+[  124.291592] 1
+[  124.291592] Stack Bottom ------------
+[  124.291696] [System Call] os2023_push :
+[  124.291696] Stack Top ---------------
+[  124.291697] 1
+[  124.291697] Stack Bottom ------------
+[  124.291700] [System Call] os2023_push :
+[  124.291711] Stack Top ---------------
+[  124.291712] 2
+[  124.291712] 1
+[  124.291713] Stack Bottom ------------
+[  124.291715] [System Call] os2023_push :
+[  124.291716] Stack Top ---------------
+[  124.291716] 3
+[  124.291717] 2
+[  124.291717] 1
+[  124.291717] Stack Bottom ------------
+[  124.291719] [System Call] os2023_pop : 
+[  124.291720] Stack Top ---------------
+[  124.291720] 2
+[  124.291721] 1
+[  124.291721] Stack Bottom ------------
+[  124.291723] [System Call] os2023_pop : 
+[  124.291723] Stack Top ---------------
+[  124.291724] 1
+[  124.291724] Stack Bottom ------------
+[  124.291726] [System Call] os2023_pop : 
+[  124.291727] Stack Top ---------------
+[  124.291727] Stack Bottom ------------
+[  124.291729] [System Call] os2023_pop : 
+[  124.291729] [Error] STACK IS EMPTY
+[  124.291730] Stack Top ---------------
+[  124.291730] Stack Bottom ------------
